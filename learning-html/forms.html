@@ -61,7 +61,57 @@
             <input type="file" name="picture">
             <br>
             <input type="submit" value="Upload">
+
+            <p>Subscribe to newsletter:</p>
+            <input type="text" value="Enter email"/> 
+            <input type="submit" value="Subscribe"/>
+
+            <p>Subscribe to newsletter (image button):</p>
+            <input type="text" value="Enter email"/> 
+            <br/>
+            <input type="image" src="images/clickhere.jpg" width="300" height="100">
+
+            <p>Subscribe to newsletter (image button):</p>
+            <input type="text" value="Enter email"/> 
+            <br/>
+            <br/>
+            <button>
+                <img src="images/plus.png" alt="plus" width="10" height="10">
+                Add
+            </button>
         </form>
+
+        <form method="get">
+            <label>
+                Male
+                <input type="checkbox" value="m" name="gender"/> 
+            </label>
+            <label>
+                Female
+                <input type="checkbox" value="f" name="gender"/>
+            </label>
+            <!-- you can also use the "for" attribute to link label to the form elements-->
+             <label for="non">Non-Binary</label>
+             <input id="non" type="checkbox" value="n" name="gender"/>
+        </form>
+
+        <form method="post">
+            <fieldset>
+                <legend>Contact Details</legend>
+                Email: <input type="email">
+                <br><br>
+                Website: <input type="url">
+                <!-- Validation field using "required"-->
+                Phone Number: <input type="text" required="required"/>
+                <br><br>
+                Date: <input type="date"/>
+                <br> <br>
+                <button> Submit</button>
+            </fieldset>
+        </form>
+
+        Search: <input type="search" placeholder="Enter keyword" name="search"/>
+
 
     </body>
 
