@@ -1,0 +1,68 @@
+<html>
+    <head>
+    <title>Forms</title>
+    </head>
+
+    <body>
+        <form action="n/a">
+            <p> Username 
+                <input type="text" name="username"/>
+            </p>
+            <p>
+                Password
+                <input type="password" name="password"/>
+            </p>
+                Write something in this box
+                <br>
+                <textarea>What do you think about poker...</textarea>
+            </p>
+            <p>
+                Select your favorite animal
+                <br>
+                <input type="radio" name="s" value="Lion" checked="checked">
+                lion
+                <input type="radio" name="s" value="Tiger">
+                tiger
+                <input type="radio" name="s" value="Jaguar">
+                jaguar
+            </p>
+            <p>
+                Select your favorite animal
+                <br>
+                <input type="checkbox" name="s" value="Lion" checked="checked">
+                lion
+                <input type="checkbox" name="s" value="Tiger">
+                tiger
+                <input type="checkbox" name="s" value="Jaguar">
+                jaguar
+            </p>
+            <p>
+                Who is your favorite poker player
+            </p>
+            <select name="pokerName" size="2">
+                <option value="hellmuth">Phil Hellmuth</option>
+                <option value="negreanu">Daniel Negreanu</option>
+                <option value="ivey" selected="selected">Phil Ivey</option>
+            </select>
+            <br>
+            <p>
+                Who is your favorite poker player (select multiple using command shift)
+            </p>
+            <select name="pokerName" size="3" multiple="multiple">
+                <option value="hellmuth">Phil Hellmuth</option>
+                <option value="negreanu">Daniel Negreanu</option>
+                <option value="ivey" selected="selected">Phil Ivey</option>
+            </select>
+
+        </form>
+        <form method="post">
+            <!-- Uploading files can also be done using the post method in for a form not the get-->
+            <p>Upload a picture</p>
+            <input type="file" name="picture">
+            <br>
+            <input type="submit" value="Upload">
+        </form>
+
+    </body>
+
+</html>
